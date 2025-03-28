@@ -52,6 +52,7 @@ app.get(
 );
 
 app.get("/profile", (req, res) => {
+  console.log(req.user);
   res.send(`Welcome ${req.user.displayName}`);
 });
 
